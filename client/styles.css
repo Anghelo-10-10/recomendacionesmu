@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #1e90ff, #ff7f50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f5f5f5;
+}
+
+#Form {
+    height: auto;
+    width: 28em;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 20px;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inputs {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputs:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.6);
+    outline: none;
+}
+
+.inputs::placeholder {
+    color: #aaa;
+}
+
+.send {
+    background-color: #ff7f50;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.send:hover {
+    background-color: #ff5722;
+    transform: translateY(-3px);
+}
+
+.get {
+    background-color: #1e90ff;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.get:hover {
+    background-color: #007bff;
+    transform: translateY(-3px);
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#randomSong {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+nav {
+    background: #1e90ff;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul:first-of-type {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff7f50;
+    transform: translateY(-2px);
+}
